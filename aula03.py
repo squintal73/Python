@@ -20,7 +20,6 @@ print ("Valor aleatorio = " + str(num_r))
 print ("Valor : " + str(num_i) + " Tipo : " + str(type(num_i)))
 print ("Valor : " + str(num_f) + " Tipo : " + str(type(num_f)))
 print ("Valor : " + str(num_c) + " Tipo : " + str(type(num_c)))
-
 print ("Valor 1: " + str(num_y[0]))
 print ("Valor 2: " + str(num_y[1]))
 print ("Valor 3: " + str(num_y[2]))
