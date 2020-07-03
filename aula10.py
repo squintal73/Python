@@ -1,4 +1,7 @@
 
+# PRACTICE - PYTHON 010"
+# LOOP - WHILE
+
 import os
 os.system('clear')
 
