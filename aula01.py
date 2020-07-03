@@ -1,4 +1,4 @@
-# FIRST PRACTICE - PYTHON 001"
+# PRACTICE - PYTHON 001"
 # Variaveis - Exemplos
 
 num_data='20/10/2020'
