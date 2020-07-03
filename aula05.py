@@ -1,3 +1,5 @@
+# PRACTICE - PYTHON 005"
+
 texto=" Curso de Python "
 
 palavra="python"
@@ -5,7 +7,6 @@ palavra="python"
 busca=palavra in texto
 
 busca1=palavra.upper() in texto.upper()
-
 
 print(busca)
 
