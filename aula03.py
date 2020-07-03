@@ -1,4 +1,5 @@
-# tipo de  variaveis
+# PRACTICE - PYTHON 003"
+# TYPES - variaveis
 
 import random
 
