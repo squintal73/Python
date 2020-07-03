@@ -1,4 +1,3 @@
-
 # PRACTICE - PYTHON 010"
 # LOOP - WHILE
 
