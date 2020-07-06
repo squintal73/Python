@@ -11,7 +11,7 @@ class Carro:
     ligado=False
     def __init__(self,nome,pot):
         self.nome=nome
-        self.pot=pot
+        self.pot=int(pot)
         self.velMax=int(pot)*2
         self.ligado=False
         
@@ -27,7 +27,7 @@ class Carro:
         print("ligado "+("sim" if self.ligado==True else "nao"))
         
 def Menu():
-    os.sytem("Clear") or None
+    os.system("clear")
     print("1 - Novo Carro")
     print("2 - Informacoes do Carro")
     print("3 - Excluir Carro")
@@ -35,7 +35,7 @@ def Menu():
     print("5 - Desligar Carro")
     print("6 - Listar Carro")
     print("7 - Sair")
-    print("Quantidade de Carros"+str(len(carros)))
+    print("Quantidade de Carros: "+str(len(carros)))
     opc=input("Digite um Opcao: ")
     return opc
 
@@ -46,7 +46,7 @@ def NovoCarro():
     car=Carro(n,p)
     carros.append(car)
     print("Novo carro Criado")
-    os.system("pause")
+    os.system("break")
 
 def informacoes():
     os.system("clear")
@@ -64,7 +64,7 @@ def excluirCarro():
         del carros[int(n)]
     except:
         print("Carro nao existe na lista")
-    os.system("pause")
+    os.system("break")
     
 def ligarCarro():
     os.system("clear")
@@ -86,13 +86,31 @@ def desligarCarro():
         print("Carro nao existe na lista")
     os.system("pause")
     
-    def listarCarros():
-        os.system("clear")
+def listarCarros():
+    os.system("clear")
     p=0
     for c in carros:
-        print(str(p + " - " + c.nome))
+        print(str(p) + " - " + c.nome)
         p=p+1
     os.system("pause")
     
-    
+ret=Menu()
+while ret < "7":
+    if ret=="1":
+       NovoCarro()
+    elif ret=="2":
+        informacoes()
+    elif ret=="3":
+        excluirCarro()
+    elif ret=="4":
+        ligarCarro()
+    elif ret=="5":
+        desligarCarro()
+    elif ret=="6":
+         listarCarros()
+    ret=Menu()
+        
+os.system("clear")
+print("Programa Finalizado")
+            
     
