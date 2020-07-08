@@ -5,8 +5,8 @@
 
 # import sys # import o modulo todo
 # print(sys.platform)
-from sys import platform as sidnei # import apenas (platform)pode dar um alias
-print(sidnei)
+from sys import platform as sid # import apenas (platform)pode dar um alias
+print(sid)
 
 
 
