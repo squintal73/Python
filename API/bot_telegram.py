@@ -6,8 +6,10 @@
 
 import requests
 
+token='859780563:AAGKJLs9F2sW8NvbVR3gIYXScBwxXbrt22M'
+
 def get_msg():
-    token='1162169149:AAE0OzfRtNgUtBhSP0a2RBE5JzZ4-FZXCWk'
+
     url='https://api.telegram.org/bot{0}/getUpdates'.format(token)
     r=requests.get(url)
     r_json = r.json()
@@ -18,17 +20,16 @@ def get_msg():
         ido=(i['message']['chat']['id'])
         idmsg=(i['message']['message_id'])
         texto=(i['message']['text'])
-        print ("ID: " + str(ido) + " - " + str(idmsg) + " - " + nome)
+        print ("ID: " + str(ido) + " - " + str(idmsg) + " - " + nome + " - " + str(texto))
         
 def send_msg():
-    token='1162169149:AAE0OzfRtNgUtBhSP0a2RBE5JzZ4-FZXCWk'
+
     url='https://api.telegram.org/bot{0}/sendMessage'.format(token)
     data={'chat_id':949353603,'text':'?que tal esta?'}
     r=requests.post(url,data=data)
     print (r.content)
     
-    
-    
+
 if __name__ == '__main__':
         #get_msg()
         send_msg()

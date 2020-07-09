@@ -8,7 +8,6 @@ import requests
 import os
 
 os.system("clear")
-
 cep=input("Digite o CEP : ")
 
 def consulta_cep(cep):
